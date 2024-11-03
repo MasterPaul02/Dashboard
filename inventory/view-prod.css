@@ -1,0 +1,107 @@
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+    margin: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal.active {
+    display: block; /* Show the modal */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Set a specific width for the modal */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    position: relative; /* Relative positioning for absolute elements */
+}
+.modal-content .close {
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Space from the top */
+    right: 15px; /* Space from the right */
+    font-size: 20px; /* Adjust size as needed */
+    cursor: pointer; /* Pointer cursor for better UX */
+}
+.modal-content .btn {
+    padding: 5px 10px; /* Increase button size */
+    font-size: 14px; /* Adjust font size */
+    margin-right: 5px; /* Space between buttons */
+    width: 100px;
+}
+/* Specific color styles */
+.modal-content .btn-danger {
+    background-color: #dc3545; /* Red background */
+    border: none; /* Remove border */
+    margin-bottom: 5px;
+}
+.modal-content .btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+.modal-content .btn-secondary {
+    background-color: #6c757d; /* Gray background */
+    border: none; /* Remove border */
+}
+.modal-content .btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+.overlay.active {
+    display: block;
+}
+
+table {
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Combine borders for cleaner look */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Add border to table cells */
+    padding: 12px; /* Add padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.product-image {
+    width: 50px;
+    height: 50px;
+}
+
+th {
+    background-color: #007bff; /* Bootstrap primary color for header */
+    color: rgb(0, 0, 0); /* White text for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Light gray for hover effect */
+}
+
+img {
+    max-width: 100px; /* Set a max width for product images */
+    height: auto; /* Keep the aspect ratio */
+}
